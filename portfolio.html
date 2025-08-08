@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman Portfolio</title>
+    <!-- Link to our separate stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Link to Google Fonts for the 'Inter' font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="container nav-bar">
+            <a href="#" class="logo">Naman Middha</a>
+            <!-- Hidden checkbox for the menu toggle -->
+            <input type="checkbox" id="menu-toggle" class="hidden-checkbox">
+            <!-- Hamburger menu button (label for the checkbox) -->
+            <label for="menu-toggle" class="hamburger-menu" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul id="nav-links-list" class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="story.html" class="nav-link">My Journey</a></li>
+                <li><a href="Gallery.html" class="nav-link">My Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container main-content">
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="profile-photo">
+                <img src="images/naman.portfolio.jpg" alt="Your Photo" class="photo-img">
+            </div>
+            <div class="about-text">
+                <h2 class="about-heading">Hello, I'm Naman Middha</h2>
+                <p class="about-description">
+                    I am a computer science engineer and final year student at SRMIST</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-heading">Skills</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-card">
+                    <i class="fab fa-java skill-icon text-orange-500"></i>
+                    <p class="skill-name">Java</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon text-yellow-400"></i>
+                    <p class="skill-name">Python</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-cuttlefish skill-icon text-blue-500"></i><i class="fas fa-plus skill-icon text-blue-500"></i><i class="fas fa-plus skill-icon text-blue-500"></i>
+                    <p class="skill-name">C++</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-cuttlefish skill-icon text-blue-500"></i>
+                    <p class="skill-name">C</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon text-gray-400"></i>
+                    <p class="skill-name">SQL</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon text-orange-600"></i>
+                    <p class="skill-name">HTML</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt skill-icon text-blue-500"></i>
+                    <p class="skill-name">CSS</p>
+                </div>
+                <!-- Core Subjects -->
+                <div class="skill-card">
+                    <i class="fas fa-code-branch skill-icon text-teal-400"></i>
+                    <p class="skill-name">Data Structures & Algorithms</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon text-gray-400"></i>
+                    <p class="skill-name">DBMS</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-microchip skill-icon text-purple-400"></i>
+                    <p class="skill-name">Operating Systems</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-network-wired skill-icon text-green-500"></i>
+                    <p class="skill-name">Computer Networks</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-laptop-code skill-icon text-indigo-400"></i>
+                    <p class="skill-name">Object-Oriented Programming</p>
+                </div>
+                <div class="skill-card">
+    <i class="fas fa-robot skill-icon text-green-500"></i>
+    <p class="skill-name">Artificial Intelligence</p>
+</div>
+
+<div class="skill-card">
+    <i class="fas fa-brain skill-icon text-yellow-500"></i>
+    <p class="skill-name">Machine Learning</p>
+</div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-heading">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1: Face Mask Detection (Flip Card) -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="project-card front">
+                            <img src="images/facemask.png" alt="Face Mask Detection Project" class="project-img">
+                            <div class="project-content">
+                                <h3 class="project-title">Face Mask Detection</h3>
+                                <p class="project-description">An IoT project for my course that uses an Arduino-based embedded system for real-time face mask detection. The system captures video input, analyzes it to determine mask presence, and uses an actuator to control door access accordingly.</p>
+                            </div>
+                        </div>
+                        <div class="project-card back">
+                            <video src="project/facemask.mp4" class="project-video" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Deepfake Detection (Flip Card) -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="project-card front">
+                            <img src="images/deepfake.png" alt="Deepfake Detection Project" class="project-img">
+                            <div class="project-content">
+                                <h3 class="project-title">Deepfake Detection System</h3>
+                                <p class="project-description">A machine learning and computer vision project developed to detect deepfake images. The system allows a user to upload an image, which is then analyzed by a trained model for feature extraction and pattern recognition to determine if it is fake or real.</p>
+                            </div>
+                        </div>
+                        <div class="project-card back">
+                            <video src="project/deepfake.mov" class="project-video" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Movie Recommendation System (Flip Card) -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="project-card front">
+                            <img src="images/movie.png" alt="Movie Recommendation System Project" class="project-img">
+                            <div class="project-content">
+                                <h3 class="project-title">Movie Recommendation System</h3>
+                                <p class="project-description">A DBMS course project focused on relational database design and efficient data retrieval. I used SQL to write complex queries to analyze user ratings and viewing history, implementing a content-based recommendation algorithm to suggest new movies.</p>
+                            </div>
+                        </div>
+                         <div class="project-card back">
+                            <div class="project-back-content">
+                                <h3 class="project-back-title">Tech Stack</h3>
+                                <ul class="skills-list">
+                                    <li>SQL</li>
+                                    <li>Relational Database Design</li>
+                                    <li>Content-based Filtering</li>
+                                    <li>Query Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
+            <h2 class="section-heading">Certifications</h2>
+            <div class="certifications-grid">
+                <!-- NPTEL Certifications -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/blockchain.png" alt="Blockchain and its Applications" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">Blockchain and its Applications</h3>
+                                <p class="certification-source">Indian Institute of Technology Kharagpur</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>Blockchain architecture</li>
+                                    <li>Smart contracts</li>
+                                    <li>Cryptography</li>
+                                    <li>Decentralized applications</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/data mining.png" alt="Data Mining" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">Data Mining</h3>
+                                <p class="certification-source">Indian Institute of Technology Kharagpur</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>Data preprocessing</li>
+                                    <li>Classification & clustering</li>
+                                    <li>Association rule mining</li>
+                                    <li>Statistical analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/java.png" alt="Programming in Java" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">Programming in Java</h3>
+                                <p class="certification-source">Indian Institute of Technology Kharagpur</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>Object-Oriented Programming</li>
+                                    <li>Java collections framework</li>
+                                    <li>Exception handling</li>
+                                    <li>Multithreading</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/computerArch.png" alt="Computer Architecture" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">Computer Architecture</h3>
+                                <p class="certification-source">Indian Institute of Technology Madras</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>Processor design</li>
+                                    <li>Pipelining</li>
+                                    <li>Memory hierarchy</li>
+                                    <li>Input/Output organization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/pythonforDS.png" alt="Python for Data Science" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">Python for Data Science</h3>
+                                <p class="certification-source">Indian Institute of Technology Madras</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>Pandas & NumPy</li>
+                                    <li>Data manipulation</li>
+                                    <li>Data visualization</li>
+                                    <li>Statistical modeling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CISCO Certifications -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/iot.png" alt="Introduction to Internet of Things" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">Introduction to Internet of Things</h3>
+                                <p class="certification-source">CISCO Academy</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>IoT concepts and components</li>
+                                    <li>Digital transformation</li>
+                                    <li>Cybersecurity in IoT</li>
+                                    <li>Intent-based networking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/networkingbasics.png" alt="Networking Basics" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">Networking Basics</h3>
+                                <p class="certification-source">CISCO Academy</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>Network protocols</li>
+                                    <li>IPv4 & IPv6 addressing</li>
+                                    <li>Network troubleshooting</li>
+                                    <li>Wireless network configuration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- AWS Certification -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/MLfoundations.png" alt="AWS Academy Machine Learning Foundations" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">AWS Academy Graduate - Machine Learning Foundations</h3>
+                                <p class="certification-source">AWS Academy</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>AWS Machine Learning services</li>
+                                    <li>Cloud-based ML workflows</li>
+                                    <li>Data analysis with SageMaker</li>
+                                    <li>Model deployment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Udemy Certification 1 -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/fiberoptics.png" alt="IT network cabling" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">IT network cabling: The complete fiber optics course</h3>
+                                <p class="certification-source">Udemy</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>Fiber optic cabling</li>
+                                    <li>Network cabling installation</li>
+                                    <li>Network standards & best practices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Scalar Certification -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/DBMS.png" alt="DBMS Course" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">DBMS Course - Master the Fundamentals and Advanced Concepts</h3>
+                                <p class="certification-source">SCALER</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>SQL queries and optimization</li>
+                                    <li>Relational database design</li>
+                                    <li>Transactions & concurrency control</li>
+                                    <li>Normalization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Oracle Certification -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/oraclecloud.png" alt="Oracle Cloud Infrastructure 2024 Certified Foundations Associate" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">Oracle Cloud Infrastructure 2024 Certified Foundations Associate</h3>
+                                <p class="certification-source">Oracle University</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>Cloud computing fundamentals</li>
+                                    <li>OCI core services</li>
+                                    <li>Cloud security principles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Udemy Certification 2 -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="certification-card front">
+                            <img src="certificates/NLP.png" alt="Natural Language Preprocessing Using spaCy" class="certification-img">
+                            <div class="certification-content">
+                                <h3 class="certification-title">Natural Language Preprocessing Using spaCy</h3>
+                                <p class="certification-source">Udemy</p>
+                            </div>
+                        </div>
+                        <div class="certification-card back">
+                            <div class="certification-back-content">
+                                <h3 class="certification-back-title">Skills Gained</h3>
+                                <ul class="skills-list">
+                                    <li>Natural Language Processing</li>
+                                    <li>Text processing with spaCy</li>
+                                    <li>Text data cleaning</li>
+                                    <li>Tokenization and lemmatization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-heading">Get In Touch</h2>
+            <div class="contact-links">
+                <a href="https://github.com/Naman-Middha" class="contact-link" target="_blank">
+                    <i class="fab fa-github contact-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/naman-middha-87203a29b/" class="contact-link" target="_blank">
+                    <i class="fab fa-linkedin-in contact-icon"></i>
+                </a>
+                <a href="mailto:namanmiddha191@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope contact-icon"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">&copy; 2025 Naman Middha. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
